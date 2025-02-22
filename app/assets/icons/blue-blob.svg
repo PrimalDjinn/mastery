@@ -1,0 +1,18 @@
+<svg width="832" height="930" viewBox="0 0 832 930" fill="none" xmlns="http://www.w3.org/2000/svg" class="blue-blobby">
+    <path
+        d="M83 590.22C83 693.802 268.872 679.307 385.167 679.307C501.461 679.307 500.294 580.842 568.223 451.431C644.028 307.017 387.615 247 271.321 247C155.027 247 105.11 474.875 83 590.22Z"
+        fill="#C0F6F8" fill-opacity="0.9" />
+</svg>
+<style>
+    .blue-blobby {
+        position: absolute;
+        width: 499px;
+        height: 433px;
+        left: 582px;
+        top: 247px;
+
+        background: rgba(192, 246, 248, 0.9);
+        box-shadow: 0px 0px 250px rgba(192, 246, 248, 0.9), 0px 0px 216px rgba(192, 246, 248, 0.9), 0px 0px 126px rgba(192, 246, 248, 0.9), 0px 0px 63px rgba(192, 246, 248, 0.9), 0px 0px 18px rgba(192, 246, 248, 0.9), 0px 0px 9px rgba(192, 246, 248, 0.9);
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+</style>
