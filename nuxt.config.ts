@@ -22,5 +22,7 @@ export default defineNuxtConfig({
 				prefix: "local",
 			},
 		],
+		size: '24px',
+		class: 'icon'
 	},
 });
