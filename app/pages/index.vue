@@ -236,10 +236,11 @@
 
 			</article>
 		</div>
-		<Icon name="blue-square" />
+		<Icon name="blueSquare" />
 		<Icon name="yellow-square" />
 		<Icon name="blue-square" />
 		<Icon name="yellow-square" />
+		
 	</section>
 </template>
 <script setup lang="ts">
