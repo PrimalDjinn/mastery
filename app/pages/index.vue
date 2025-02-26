@@ -1,6 +1,6 @@
 <template>
 	<section>
-		<div>
+		<div class="ml-[5vw]">
 			<div class="relative">
 				<svg
 					width="832"
@@ -8,7 +8,7 @@
 					viewBox="0 0 832 930"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="absolute"
+					class="absolute overflow-visible"
 				>
 					<g filter="url(#filter0_dddddd_4_2)">
 						<path
@@ -116,7 +116,7 @@
 					viewBox="0 0 478 627"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="transform translate-y-1/2 ml-16 -mt-10 mb-10"
+					class="transform translate-y-1/2 ml-16 -mt-10 mb-10 orbit"
 				>
 					<g filter="url(#filter0_dddddd_4_3)">
 						<path
@@ -219,11 +219,11 @@
 				</svg>
 			</div>
 			<article
-				class="flex flex-col justify-center py-14 px-8 bg-white/50 border rounded-3xl backdrop-blur-lg gap-3 headline transform -translate-y-full ml-48"
+				class="flex flex-col justify-center py-14 px-8 bg-white/50 border rounded-3xl backdrop-blur-lg gap-3 headline transform -translate-y-full ml-[10vw] -z-10"
 			>
 				<p class="font-semibold -mb-3">Hey there,</p>
 				<h1 class="text-2xl droid">Care to join this <span class="font-bold">Hub</span>? 😉</h1>
-				<p class="text-lg -mt-1 roboto" style="line-height: 2.5ch;">
+				<p class="text-lg -mt-1 roboto" style="line-height: 2.5ch">
 					Start, switch, or advance your career with more than 10,000 courses, Professional Certificates, and
 					degrees from world-class universities and companies.
 				</p>
@@ -233,8 +233,13 @@
 					</button>
 					<button class="bg-navy h-12 text-white font-bold w-40">View Courses</button>
 				</div>
+
 			</article>
 		</div>
+		<Icon name="blue-square" />
+		<Icon name="yellow-square" />
+		<Icon name="blue-square" />
+		<Icon name="yellow-square" />
 	</section>
 </template>
 <script setup lang="ts">
@@ -251,5 +256,27 @@ useSeoMeta({
 .glow-join {
 	box-shadow: 0px 0px 250px #fdc9c9, 0px 0px 250px #fdc9c9, 0px 0px 191.52px #fdc9c9, 0px 0px 95.76px #fdc9c9,
 		0px 0px 27.36px #fdc9c9, 0px 0px 13.68px #fdc9c9;
+}
+
+.orbit {
+	animation: orbit 60s linear infinite;
+}
+
+@keyframes orbit {
+	0% {
+		transform: rotate(0deg) translateX(300px);
+	}
+	25% {
+		transform: rotate(90deg) translateX(500px);
+	}
+	50% {
+		transform: rotate(180deg) translateX(300px);
+	}
+	80% {
+		transform: rotate(288deg) translateX(250px);
+	}
+	100% {
+		transform: rotate(360deg) translateX(300px);
+	}
 }
 </style>
