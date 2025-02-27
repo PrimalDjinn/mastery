@@ -21,8 +21,12 @@ export default defineNuxtConfig({
 				dir: "./app/assets/icons",
 				prefix: "local",
 			},
+			{
+				dir: "./app/assets/emojis",
+				prefix: "emoji",
+			},
 		],
-		size: '24px',
-		class: 'icon'
+		size: "24px",
+		class: "icon",
 	},
 });

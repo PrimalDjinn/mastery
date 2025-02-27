@@ -1,6 +1,6 @@
 <template>
-	<section class="relative">
-		<div class="ml-[5vw]">
+	<section class="relative w-full flex flex-col" style="max-height: 100vh; max-height: 100dvh;">
+		<div class="sm:ml-[5vw] max-w-full m-auto">
 			<div class="relative blobs">
 				<svg
 					width="832"
@@ -116,7 +116,7 @@
 					viewBox="0 0 478 627"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="transform translate-y-1/2 ml-16 -mt-10 mb-10 orbit"
+					class="transform translate-y-1/2 ml-16 -mt-10 mb-10 orbit absolute"
 				>
 					<g filter="url(#filter0_dddddd_4_3)">
 						<path
@@ -219,7 +219,7 @@
 				</svg>
 			</div>
 			<article
-				class="flex flex-col justify-center py-14 px-8 bg-white/50 border rounded-3xl backdrop-blur-lg gap-3 headline transform -translate-y-[115%] ml-[10vw] -z-10"
+				class="flex flex-col justify-center sm:py-14 sm:px-8 bg-white/50 border rounded-3xl backdrop-blur-lg gap-3 headline transform md:ml-[10vw] md:mt-[20vh] -z-10"
 			>
 				<p class="font-semibold -mb-3">Hey there,</p>
 				<h1 class="text-2xl droid">Care to join this <span class="font-bold">Hub</span>? 😉</h1>
@@ -227,7 +227,7 @@
 					Start, switch, or advance your career with more than 10,000 courses, Professional Certificates, and
 					degrees from world-class universities and companies.
 				</p>
-				<div class="w-full flex justify-between mt-4 pr-4 gap-2 px-1">
+				<div class="w-full flex justify-between mt-4 pr-4 gap-2 sm:px-1">
 					<button class="glow-join bg-white border-peach border-4 h-12 font-bold text-peach w-full">
 						Join Now
 					</button>
@@ -245,7 +245,7 @@
 			<NuxtImg
 				src="/man.png"
 				placeholder
-				class="h-96 -z-20 object-cover absolute right-[20%] top-[28%] grid boy"
+				class="h-96 -z-20 object-cover absolute right-[20%] -bottom-[30%] grid boy"
 				style="aspect-ratio: 157/144"
 			/>
 		</div>
@@ -268,16 +268,17 @@
 	height: 60px;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1500px) {
 	.headline {
 		width: 500px;
 	}
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1500px) {
 	.boy {
 		height: 300px;
-		top: 22%;
+		top:unset;
+		bottom: -20%;
 	}
 
 	.girl {
@@ -287,9 +288,9 @@
 
 	.headline {
 		width: 420px;
-		transform: translateY(-170%);
 		margin-left: 5vw;
 		padding: 2rem;
+		margin-top: 15vh;
 	}
 
 	.blobs {
@@ -297,21 +298,54 @@
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.headline {
+		width: unset;
+		max-width: 90vw;
+		margin: unset;
+		margin: auto;
+		margin-top: 10vh;
+		padding: 1.5rem;
+	}
+
+	.boy {
+		top: unset;
+		height: 200px;
+		left: 1vw;
+		bottom: -75%;
+	}
+
+	.girl {
+		top: unset;
+		height: 150px;
+		right: 1vw;
+		margin-top: 1rem;
+	}
+
+	.blobs {
+		position: absolute;
+		top: -70%;
+		left: 0;
+		z-index: -1200;
+	}
+}
+
 .glow-join {
-  box-shadow: 0px 0px 250px #fdc9c9, 0px 0px 250px #fdc9c9, 0px 0px 191.52px #fdc9c9, 
-              0px 0px 95.76px #fdc9c9, 0px 0px 27.36px #fdc9c9, 0px 0px 13.68px #fdc9c9;
-  animation: pulse-box-shadow 15s infinite;
+	box-shadow: 0px 0px 250px #fdc9c9, 0px 0px 250px #fdc9c9, 0px 0px 191.52px #fdc9c9, 0px 0px 95.76px #fdc9c9,
+		0px 0px 27.36px #fdc9c9, 0px 0px 13.68px #fdc9c9;
+	animation: pulse-box-shadow 15s infinite;
 }
 
 @keyframes pulse-box-shadow {
-  0%, 100% {
-    box-shadow: 0px 0px 250px #fdc9c9, 0px 0px 250px #fdc9c9, 0px 0px 191.52px #fdc9c9, 
-                0px 0px 95.76px #fdc9c9, 0px 0px 27.36px #fdc9c9, 0px 0px 13.68px #fdc9c9;
-  }
-  50% {
-    box-shadow: 0px 0px 500px #ff8080, 0px 0px 500px #ff8080, 0px 0px 350px #ff8080, 
-                0px 0px 200px #ff8080, 0px 0px 100px #ff8080, 0px 0px 50px #ff8080;
-  }
+	0%,
+	100% {
+		box-shadow: 0px 0px 250px #fdc9c9, 0px 0px 250px #fdc9c9, 0px 0px 191.52px #fdc9c9, 0px 0px 95.76px #fdc9c9,
+			0px 0px 27.36px #fdc9c9, 0px 0px 13.68px #fdc9c9;
+	}
+	50% {
+		box-shadow: 0px 0px 500px #ff8080, 0px 0px 500px #ff8080, 0px 0px 350px #ff8080, 0px 0px 200px #ff8080,
+			0px 0px 100px #ff8080, 0px 0px 50px #ff8080;
+	}
 }
 
 .orbit {
