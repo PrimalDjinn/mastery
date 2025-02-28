@@ -1,5 +1,5 @@
 <template>
-	<section class="bg-navy h-40 w-full flex p-5 items-end justify-between" ref="footer">
+	<section class="bg-navy h-72 w-full flex p-5 items-end justify-between" ref="footer">
 		<div class="text-xl">
 			<span class="mr-1 font-bold text-white">M<span class="max-sm:hidden">astery</span></span
 			><span class="bg-orange font-bold text-white px-1.5 rounded py-0.5">Hub</span>
@@ -10,9 +10,7 @@
 			<Icon name="local:bsky-social" />
 			<Icon name="local:ig-social" />
 		</div>
-		<div class="font-bold text-white text-xl">
-			<span>&copy; </span> 2025
-		</div>
+		<div class="font-bold text-white text-xl"><span>&copy; </span> 2025</div>
 	</section>
 </template>
 <script setup lang="ts">
@@ -30,13 +28,9 @@ class CustomIntersectionObserver {
 			(entries) => {
 				for (const entry of entries) {
 					if (entry.isIntersecting) {
-						this.callbacks.visible
-							.entries()
-							.forEach(([id, callback]) => callback(id, entry));
+						this.callbacks.visible.entries().forEach(([id, callback]) => callback(id, entry));
 					} else {
-						this.callbacks.hidden
-							.entries()
-							.forEach(([id, callback]) => callback(id, entry));
+						this.callbacks.hidden.entries().forEach(([id, callback]) => callback(id, entry));
 					}
 				}
 			},
