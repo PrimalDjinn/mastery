@@ -1,7 +1,7 @@
 <template>
-	<section class="relative w-full flex flex-col" style="max-height: 100vh; max-height: 100dvh;">
+	<section class="relative w-full flex flex-col">
 		<div class="sm:ml-[5vw] max-w-full m-auto">
-			<div class="relative blobs">
+			<div class="absolute -top-20 blobs">
 				<svg
 					width="832"
 					height="930"
@@ -40,7 +40,11 @@
 								type="matrix"
 								values="0 0 0 0 0.752941 0 0 0 0 0.964706 0 0 0 0 0.972549 0 0 0 0.9 0"
 							/>
-							<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_2" />
+							<feBlend
+								mode="normal"
+								in2="BackgroundImageFix"
+								result="effect1_dropShadow_4_2"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -53,7 +57,11 @@
 								type="matrix"
 								values="0 0 0 0 0.752941 0 0 0 0 0.964706 0 0 0 0 0.972549 0 0 0 0.9 0"
 							/>
-							<feBlend mode="normal" in2="effect1_dropShadow_4_2" result="effect2_dropShadow_4_2" />
+							<feBlend
+								mode="normal"
+								in2="effect1_dropShadow_4_2"
+								result="effect2_dropShadow_4_2"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -66,7 +74,11 @@
 								type="matrix"
 								values="0 0 0 0 0.752941 0 0 0 0 0.964706 0 0 0 0 0.972549 0 0 0 0.9 0"
 							/>
-							<feBlend mode="normal" in2="effect2_dropShadow_4_2" result="effect3_dropShadow_4_2" />
+							<feBlend
+								mode="normal"
+								in2="effect2_dropShadow_4_2"
+								result="effect3_dropShadow_4_2"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -79,7 +91,11 @@
 								type="matrix"
 								values="0 0 0 0 0.752941 0 0 0 0 0.964706 0 0 0 0 0.972549 0 0 0 0.9 0"
 							/>
-							<feBlend mode="normal" in2="effect3_dropShadow_4_2" result="effect4_dropShadow_4_2" />
+							<feBlend
+								mode="normal"
+								in2="effect3_dropShadow_4_2"
+								result="effect4_dropShadow_4_2"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -92,7 +108,11 @@
 								type="matrix"
 								values="0 0 0 0 0.752941 0 0 0 0 0.964706 0 0 0 0 0.972549 0 0 0 0.9 0"
 							/>
-							<feBlend mode="normal" in2="effect4_dropShadow_4_2" result="effect5_dropShadow_4_2" />
+							<feBlend
+								mode="normal"
+								in2="effect4_dropShadow_4_2"
+								result="effect5_dropShadow_4_2"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -105,8 +125,17 @@
 								type="matrix"
 								values="0 0 0 0 0.752941 0 0 0 0 0.964706 0 0 0 0 0.972549 0 0 0 0.9 0"
 							/>
-							<feBlend mode="normal" in2="effect5_dropShadow_4_2" result="effect6_dropShadow_4_2" />
-							<feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow_4_2" result="shape" />
+							<feBlend
+								mode="normal"
+								in2="effect5_dropShadow_4_2"
+								result="effect6_dropShadow_4_2"
+							/>
+							<feBlend
+								mode="normal"
+								in="SourceGraphic"
+								in2="effect6_dropShadow_4_2"
+								result="shape"
+							/>
 						</filter>
 					</defs>
 				</svg>
@@ -116,7 +145,7 @@
 					viewBox="0 0 478 627"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="transform translate-y-1/2 ml-16 -mt-10 mb-10 orbit absolute"
+					class="orbit"
 				>
 					<g filter="url(#filter0_dddddd_4_3)">
 						<path
@@ -147,7 +176,11 @@
 								type="matrix"
 								values="0 0 0 0 0.937255 0 0 0 0 0.937255 0 0 0 0 0.745098 0 0 0 1 0"
 							/>
-							<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_3" />
+							<feBlend
+								mode="normal"
+								in2="BackgroundImageFix"
+								result="effect1_dropShadow_4_3"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -160,7 +193,11 @@
 								type="matrix"
 								values="0 0 0 0 0.937255 0 0 0 0 0.937255 0 0 0 0 0.745098 0 0 0 1 0"
 							/>
-							<feBlend mode="normal" in2="effect1_dropShadow_4_3" result="effect2_dropShadow_4_3" />
+							<feBlend
+								mode="normal"
+								in2="effect1_dropShadow_4_3"
+								result="effect2_dropShadow_4_3"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -173,7 +210,11 @@
 								type="matrix"
 								values="0 0 0 0 0.937255 0 0 0 0 0.937255 0 0 0 0 0.745098 0 0 0 1 0"
 							/>
-							<feBlend mode="normal" in2="effect2_dropShadow_4_3" result="effect3_dropShadow_4_3" />
+							<feBlend
+								mode="normal"
+								in2="effect2_dropShadow_4_3"
+								result="effect3_dropShadow_4_3"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -186,7 +227,11 @@
 								type="matrix"
 								values="0 0 0 0 0.937255 0 0 0 0 0.937255 0 0 0 0 0.745098 0 0 0 1 0"
 							/>
-							<feBlend mode="normal" in2="effect3_dropShadow_4_3" result="effect4_dropShadow_4_3" />
+							<feBlend
+								mode="normal"
+								in2="effect3_dropShadow_4_3"
+								result="effect4_dropShadow_4_3"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -199,7 +244,11 @@
 								type="matrix"
 								values="0 0 0 0 0.937255 0 0 0 0 0.937255 0 0 0 0 0.745098 0 0 0 1 0"
 							/>
-							<feBlend mode="normal" in2="effect4_dropShadow_4_3" result="effect5_dropShadow_4_3" />
+							<feBlend
+								mode="normal"
+								in2="effect4_dropShadow_4_3"
+								result="effect5_dropShadow_4_3"
+							/>
 							<feColorMatrix
 								in="SourceAlpha"
 								type="matrix"
@@ -212,40 +261,54 @@
 								type="matrix"
 								values="0 0 0 0 0.937255 0 0 0 0 0.937255 0 0 0 0 0.745098 0 0 0 1 0"
 							/>
-							<feBlend mode="normal" in2="effect5_dropShadow_4_3" result="effect6_dropShadow_4_3" />
+							<feBlend
+								mode="normal"
+								in2="effect5_dropShadow_4_3"
+								result="effect6_dropShadow_4_3"
+							/>
 						</filter>
-						<feBlend mode="normal" in="SourceGraphic" in2="effect6_dropShadow_4_3" result="shape" />
+						<feBlend
+							mode="normal"
+							in="SourceGraphic"
+							in2="effect6_dropShadow_4_3"
+							result="shape"
+						/>
 					</defs>
 				</svg>
 			</div>
 			<article
-				class="flex flex-col justify-center sm:py-14 sm:px-8 bg-white/50 border rounded-3xl backdrop-blur-lg gap-3 headline transform md:ml-[10vw] md:mt-[20vh] -z-10"
+				class="flex flex-col justify-center sm:py-14 sm:px-8 bg-white/50 border rounded-3xl backdrop-blur-lg gap-3 headline transform -translate-y-10 md:ml-[10vw]"
 			>
 				<p class="font-semibold -mb-3">Hey there,</p>
-				<h1 class="text-2xl droid">Care to join this <span class="font-bold">Hub</span>? 😉</h1>
+				<h1 class="text-2xl droid">
+					Care to join this <span class="font-bold">Hub</span>? 😉
+				</h1>
 				<p class="text-lg -mt-1 roboto" style="line-height: 2.5ch">
-					Start, switch, or advance your career with more than 10,000 courses, Professional Certificates, and
-					degrees from world-class universities and companies.
+					Start, switch, or advance your career with more than 10,000 courses,
+					Professional Certificates, and degrees from world-class universities and
+					companies.
 				</p>
 				<div class="w-full flex justify-between mt-4 pr-4 gap-2 sm:px-1">
-					<button class="glow-join bg-white border-peach border-4 h-12 font-bold text-peach w-full">
+					<button
+						class="glow-join bg-white border-peach border-4 h-12 font-bold text-peach w-full"
+					>
 						Join Now
 					</button>
 					<button class="bg-navy h-12 text-white font-bold w-full">View Courses</button>
 				</div>
 			</article>
 		</div>
-		<div class="isolate -z-20">
+		<div class="-z-10">
 			<NuxtImg
 				src="/girl.png"
 				placeholder
-				class="h-72 -z-10 object-cover absolute right-[5%] top-[10%] grid girl"
+				class="h-72 object-cover absolute right-[5%] top-[10%] grid girl"
 				style="aspect-ratio: 85/72"
 			/>
 			<NuxtImg
 				src="/man.png"
 				placeholder
-				class="h-96 -z-20 object-cover absolute right-[20%] -bottom-[30%] grid boy"
+				class="h-96 object-cover absolute right-[20%] bottom-[14%] grid boy"
 				style="aspect-ratio: 157/144"
 			/>
 		</div>
@@ -274,27 +337,25 @@
 	}
 }
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1366px) {
 	.boy {
-		height: 300px;
-		top:unset;
-		bottom: -20%;
+		bottom: 8%;
 	}
 
 	.girl {
-		height: 230px;
-		top: 6%;
+		top: 2%;
 	}
+}
 
+@media screen and (max-width: 1500px) {
 	.headline {
 		width: 420px;
 		margin-left: 5vw;
 		padding: 2rem;
-		margin-top: 15vh;
 	}
 
 	.blobs {
-		transform: translateY(-25%) translateX(-5%);
+		margin-left: -10%;
 	}
 }
 
@@ -304,15 +365,14 @@
 		max-width: 90vw;
 		margin: unset;
 		margin: auto;
-		margin-top: 10vh;
 		padding: 1.5rem;
+		margin-top: -25%;
 	}
 
 	.boy {
 		top: unset;
 		height: 200px;
 		left: 1vw;
-		bottom: -75%;
 	}
 
 	.girl {
@@ -320,31 +380,30 @@
 		height: 150px;
 		right: 1vw;
 		margin-top: 1rem;
+		bottom: 5%;
 	}
 
 	.blobs {
-		position: absolute;
-		top: -70%;
-		left: 0;
 		z-index: -1200;
+		top: -20%;
 	}
 }
 
 .glow-join {
-	box-shadow: 0px 0px 250px #fdc9c9, 0px 0px 250px #fdc9c9, 0px 0px 191.52px #fdc9c9, 0px 0px 95.76px #fdc9c9,
-		0px 0px 27.36px #fdc9c9, 0px 0px 13.68px #fdc9c9;
+	box-shadow: 0px 0px 250px #fdc9c9, 0px 0px 250px #fdc9c9, 0px 0px 191.52px #fdc9c9,
+		0px 0px 95.76px #fdc9c9, 0px 0px 27.36px #fdc9c9, 0px 0px 13.68px #fdc9c9;
 	animation: pulse-box-shadow 15s infinite;
 }
 
 @keyframes pulse-box-shadow {
 	0%,
 	100% {
-		box-shadow: 0px 0px 250px #fdc9c9, 0px 0px 250px #fdc9c9, 0px 0px 191.52px #fdc9c9, 0px 0px 95.76px #fdc9c9,
-			0px 0px 27.36px #fdc9c9, 0px 0px 13.68px #fdc9c9;
+		box-shadow: 0px 0px 250px #fdc9c9, 0px 0px 250px #fdc9c9, 0px 0px 191.52px #fdc9c9,
+			0px 0px 95.76px #fdc9c9, 0px 0px 27.36px #fdc9c9, 0px 0px 13.68px #fdc9c9;
 	}
 	50% {
-		box-shadow: 0px 0px 500px #ff8080, 0px 0px 500px #ff8080, 0px 0px 350px #ff8080, 0px 0px 200px #ff8080,
-			0px 0px 100px #ff8080, 0px 0px 50px #ff8080;
+		box-shadow: 0px 0px 500px #ff8080, 0px 0px 500px #ff8080, 0px 0px 350px #ff8080,
+			0px 0px 200px #ff8080, 0px 0px 100px #ff8080, 0px 0px 50px #ff8080;
 	}
 }
 

@@ -6,16 +6,3 @@
 		<NuxtPage />
 	</NuxtLayout>
 </template>
-<style>
-.inter {
-	font-family: "Inter", serif;
-}
-
-.droid {
-	font-family: "droid-sans", sans-serif;
-}
-
-.roboto {
-	font-family: "Roboto", sans-serif;
-}
-</style>

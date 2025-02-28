@@ -3,6 +3,7 @@ export default defineNuxtConfig({
 	compatibilityDate: "2024-11-01",
 	devtools: { enabled: true },
 	modules: ["reka-ui/nuxt", "@nuxt/fonts", "@nuxt/scripts", "@nuxt/image", "@nuxt/icon"],
+	css: ["~/assets/styles/fonts.css"],
 	future: {
 		compatibilityVersion: 4,
 	},
