@@ -22,11 +22,13 @@ function toggleDropDown() {
 					<NuxtLink class="font-bold">Pricing</NuxtLink>
 				</li>
 				<li>
-					<button
+					<NuxtLink 
+						role="button"
+						to="/auth/login"
 						class="bg-orange text-white font-bold inter sm:px-5 py-1 rounded-sm sign-in"
 					>
 						Sign In
-					</button>
+					</NuxtLink>
 				</li>
 			</ul>
 		</div>
