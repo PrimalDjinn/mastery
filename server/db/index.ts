@@ -6,7 +6,7 @@ import * as schema from "./schema";
 import { drizzle } from "drizzle-orm/postgres-js";
 
 const connection = postgres({
-	ssl: isDevelopment ? false : "prefer",
+	ssl: "prefer",
 	host: credentials.host,
 	database: credentials.pathname.replace("/", ""),
 	password: credentials.password,

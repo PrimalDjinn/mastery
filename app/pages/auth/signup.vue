@@ -100,7 +100,7 @@ onMounted(() => {
 	>
 		<form @submit.prevent="submit" class="flex flex-col gap-8 max-sm:gap-4">
 			<div>
-				<h2 class="text-lg uppercase font-serif">Sutit.</h2>
+				<h2 class="text-lg uppercase font-serif">Mastery Hub.</h2>
 				<h1 class="text-4xl font-sans font-bold">Sign Up</h1>
 			</div>
 			<div class="flex flex-col gap-1">

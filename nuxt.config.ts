@@ -15,7 +15,7 @@ export default defineNuxtConfig({
 	imports: {
 		dirs: ["../shared/types", "../shared/utils"],
 	},
-	extends: ["github:kgarchie/nuxt-starter#1"],
+	extends: ["github:kgarchie/nuxt-starter"],
 	icon: {
 		customCollections: [
 			{
